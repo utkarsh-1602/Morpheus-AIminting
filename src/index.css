@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@mixin sp-layout {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +24,10 @@ body {
   font-family: "Play";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(107, 1, 205) 100%);
+  background-image: url('space.jpg');
+  background-size: 2000px 1000px;
 }
 
 /* ------------------------------------------------------ */
@@ -38,9 +48,27 @@ nav {
 }
 
 .nav__brand h1 {
-  color: var(--clr-blue);
+  background: -webkit-linear-gradient(rgb(107, 1, 205), #00d2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: clamp(1.75em, 4vw, 2.5em);
   font-weight: 800;
+  left: 150px;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  }
+
+  .nav__brand h1:hover{
+  background-image: -webkit-linear-gradient( #00d2ff,rgb(107, 1, 205));
+    
+  }
+
+.nav__brand p{
+  position: relative;
+  top: 45px;
+  right: 110px;
+  color: #FFFFFF;
+  font-family: 'Michroma', sans-serif;
 }
 
 .nav__connect {
@@ -48,7 +76,7 @@ nav {
   height: 50px;
   margin: 0 auto;
 
-  background-color: var(--clr-blue);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   color: var(--clr-white);
 
   border: none;
@@ -60,10 +88,12 @@ nav {
 
   cursor: pointer;
   transition: all 250ms ease;
+ 
+
 }
 
 .nav__connect:hover {
-  background-color: var(--clr-blue-2);
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 }
 
 /* ------------------------------------------------------ */
@@ -92,16 +122,15 @@ form input[type="text"] {
   margin: 10px 0;
   padding: 10px;
 
-  border: 1px solid var(--clr-blue);
+  border: 1px solid black;
   border-radius: 4px;
 
   font-size: 1.10em;
 }
 
 form input[type="submit"] {
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
-
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  color: white;
   width: 250px;
   height: 50px;
   margin: 10px 0;
@@ -119,7 +148,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: var(--clr-blue-2);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 /* ------------------------------------------------------ */
@@ -134,9 +163,8 @@ form input[type="submit"]:hover {
   width: 512px;
   height: 512px;
   margin: 0 25px;
-  border: 3px solid var(--clr-blue);
-  border-radius: 4px;
-
+  border: 3px solid white;
+  border-radius: 10px;  
   overflow: hidden;
 }
 
@@ -156,6 +184,7 @@ form input[type="submit"]:hover {
   margin: 0 10px;
 }
 
+
 /* ------------------------------------------------------ */
 /* -- TEXT -- */
 p {
@@ -169,3 +198,6 @@ p {
     flex-direction: column;
   }
 }
+
+
+
