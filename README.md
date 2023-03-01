@@ -1,7 +1,7 @@
 
 # A.I NFT Minting Application  
-
 An application where users can create generative artworks by typing a detailed description. It uses stable diffusion technique to create AI-generated artworks. We can mint those artworks as NFT's and store them on IPFS. 
+
 
 ## ⚙️ Working
 
