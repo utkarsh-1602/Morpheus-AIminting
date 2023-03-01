@@ -2,16 +2,19 @@
 # A.I NFT Minting Application  
 An application where users can create generative artworks by typing a detailed description. It uses stable diffusion technique to create AI-generated artworks. We can mint those artworks as NFT's and store them on IPFS. 
 
+# Screenshots 
+![AINFT](mint1.png?raw=true "collection1")
+![AINFT](mint2.png?raw=true "collection2")
 
 ## ⚙️ Working
 
-* Writing smartcontracts in solidity programming language, using Ethereum Blockchain. 
-* Using stable diffusion model for A.I Image generation, hugging Face API Provides that. 
-* Upload the images to IPFS on nft.storage (free storage for NFT's), post images to IPFS, it will give you hash values, and we can store those on On-chain. 
+* Writing smart contracts in **solidity** programming language, using Ethereum Blockchain. 
+* Using **stable diffusion model** for A.I Image generation, **hugging Face API** Provides that. 
+* Upload the images to **IPFS** on **nft.storage** (free storage for NFT's), post images to IPFS, it will give you hash values, and we can store those on On-chain. 
 * Using Hardhat development framework, for creating smart contracts, deploying scripts, etc. 
-* using ether.js where the JavaScript applications can talk directly to the blockchain from client-side application. 
-* using HUGGING_FACE_API and NFT_STORAGE_API key. 
-* Used Oppenzeppelin framework to build secure smart contracts, using ownable.sol contract from openzeppelin which helps you to manage the ownership of the contract. ownable.sol let's you transfer and renounce ownership.
+* using **ether.js** where the JavaScript applications can talk directly to the blockchain from client-side application. 
+* using **HUGGING_FACE_API** and **NFT_STORAGE_API** key. 
+* Used **Oppenzeppelin framework** to build secure smart contracts, using ownable.sol contract from openzeppelin which helps you to manage the ownership of the contract. **ownable.sol** let's you transfer and renounce ownership.
 
 
 ## Article 
